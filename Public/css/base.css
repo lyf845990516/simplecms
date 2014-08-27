@@ -1,0 +1,75 @@
+body,div,ul,li,h1,h2,h3,h4,h5,h6,hr,p,button,input,textarea{ margin:0;padding:0; }
+body{ font-size:13px; font-family:"微软雅黑","宋体"; color:#5F5F5F; }
+li{ list-style:none;}
+img{ border:none;}
+a{ text-decoration:none; color:#5F5F5F;}
+a:hover{  color:#3AA631;}
+.clear{ clear:both;}
+.clearfix:after { content: ""; display: block; height: 0; clear: both;}
+.clearfix { zoom: 1;}
+.relative{ position:relative;}
+#left{  background-color: #404040; width: 180px; height: 100%; float: left;}
+#right{ float: left;}
+#footer{ background-color: #f0f0f0; height: 40px; width: 100%;}
+#footer p{ text-align: center; line-height: 40px;}
+#sidebar > ul > li > a {
+    display: block;
+    position: relative;
+    margin: 0;
+    border: 0px;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    width: 150px;
+    padding: 5px 15px;
+    background: #505050;
+    color: #ffffff;
+    transition-duration: 500ms;
+    transition-property: width, background;
+    transition-timing-function: ease;
+    -webkit-transition-duration: 500ms;
+    -webkit-transition-property: width, background;
+    -webkit-transition-timing-function: ease;
+}
+
+#sidebar > ul > li > a > span {
+    display: inline-block;
+    line-height: normal;
+}
+
+#sidebar > ul > li a i {
+    color:#eaeaea;
+    font-size: 16px;
+}
+
+#sidebar > ul > li a i {
+    width: 25px;
+}
+
+#sidebar > ul > li.active > a{
+    border: none;
+}
+
+#sidebar > ul > li.active > a .arrow {
+    margin-right: 0px;
+}
+
+#sidebar > ul > li.active > a .arrow.open {
+    margin-right: 0px;
+}
+
+#sidebar ul > li > a .arrow {
+    float: right;
+    margin-top: 12px;
+    margin-right: 0px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid #A0A0A0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+

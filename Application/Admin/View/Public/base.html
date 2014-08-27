@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <block name="title"><title>标题</title></block>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="simpleliu" name="author" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap-responsive.min.css"  />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap-fileupload.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style-gray.css" id="style_color">
+</head>
+<body>
+	<block name="top"><include file="Public/header" /></block>
+	<div class="clearfix" style="margin-top:60px;">
+		<block name="left"><include file="Public/left" /></block>
+		<div id="main-content" style="margin-left: 180px;">
+			 <!-- BEGIN PAGE CONTAINER-->
+         	<div class="container-fluid">
+				<block name="right"><include file="Public/right" /></block>
+			</div>
+         	<!-- END PAGE CONTAINER-->
+		</div>
+	</div>
+	<block name="footer"><include file="Public/footer" /></block>
+	<block name="theme"><include file="Public/theme" /></block>
+</body>
+	<script type="text/javascript">
+		var myappConfig = {
+			'js': '__PUBLIC__/js',
+			'img' : '__PUBLIC__/img',
+			'css' : '__PUBLIC__/css'
+		};
+	</script>
+
+ <!-- BEGIN JAVASCRIPTS -->
+   <!-- Load javascripts at bottom, this will reduce page load time -->
+   <script src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+   <script src="__PUBLIC__/js/jquery.nicescroll.js" type="text/javascript"></script>
+   <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+   <script src="__PUBLIC__/js/jquery.blockui.js"></script>
+   <!-- ie8 fixes -->
+   <!--[if lt IE 9]>
+   <script src="__PUBLIC__/js/excanvas.js"></script>
+   <script src="__PUBLIC__/js/respond.js"></script>
+   <![endif]-->
+   <script type="text/javascript" src="__PUBLIC__/js/chosen.jquery.min.js"></script>
+   <script type="text/javascript" src="__PUBLIC__/js/jquery.uniform.min.js"></script>
+   <script src="__PUBLIC__/js/jquery.scrollTo.min.js"></script>
+
+   <!--common script for all pages-->
+   <script src="__PUBLIC__/js/common-scripts.js"></script>
+
+</html>
